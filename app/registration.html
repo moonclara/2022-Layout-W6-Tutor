@@ -1,0 +1,105 @@
+---
+title: 程式家教
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="registration text-white">
+    <div class="bg-dark pt-4 pb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-9 col-md-7 timeline">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-5">
+                    <div class="timeline-pointer text-center step-1 active">
+                        <p>課程報名</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="timeline-pointer text-center step-2">
+                        <p>信用卡付款</p>
+                    </div>
+                </div>
+                <div class="col-3 col-md-5">
+                    <div class="timeline-pointer text-center step-3">
+                        <p>付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="step1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 dialog-position" >
+                    <div class="step1-dialog bg-light">
+                        <div class="course-card">
+                            <img src="./assets/images/teacher01.jpg"
+                                class="rounded-circle d-block mx-auto border border-primary border-3" alt="teacher01"
+                                width="100">
+                            <div class="card-body p-0 pt-4">
+                                <h6 class="card-title text-center mb-1 fs-8">2022 Python 全攻略｜從入門到實務</h6>
+                                <p class="card-title text-primary text-center mb-2">前端語言</p>
+                                <p class="card-text text-left m-0">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的HTML 語法出發。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12 content-position">
+                    <div class="step1-content bg-dark">
+                        <h4 class="text-center mb-7">課程報名</h4>
+                        <h6 class="fs-8 fw-bolder">選擇付款方式</h6>
+                        <button type="button" class="btn btn-outline-primary px-5 py-3 mb-5">信用卡付款</button>
+                        <button type="button" class="btn btn-outline-white px-5 py-3 mb-5">超商繳款</button>
+                        <button type="button" class="btn btn-outline-white px-5 py-3 mb-5">ATM轉帳</button>
+                        <button type="button" class="btn btn-outline-white px-5 py-3 mb-5">12期分期付款</button>
+
+                        <h6 class="fs-8 fw-bolder mb-4">訂單資訊</h6>
+                        <form class="row g-3">
+                            <div class="col-md-6 mb-4">
+                                <label for="inputName" class="form-label">姓名</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="請輸入姓名">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputPhone" class="form-label">電話</label>
+                                <input type="text" class="form-control" id="inputPhone" placeholder="請輸入電話號碼">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="請輸入Email">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputCourse" class="form-label">課程</label>
+                                <select id="inputCourse" class="form-select">
+                                    <option selected>10堂50分鐘</option>
+                                    <option>10堂50分鐘</option>
+                                    <option>10堂50分鐘</option>
+                                    <option>10堂50分鐘</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputState" class="form-label">想預約的日期</label>
+                                <input type="date" placeholder="請選擇日期" name="datepicker" class="form-control">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="inputLocate" class="form-label">上課地點</label>
+                                <input type="text" class="form-control" id="inputLocate" placeholder="請輸入上課地點">
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div> NT$1600</div>
+                            <a href="payment.html">
+                                <button type="submit" class="btn btn-program-01 m-0">前往結賬</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

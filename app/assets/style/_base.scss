@@ -1,0 +1,43 @@
+body {
+    font-family: 'Azeret Mono', monospace, 'Noto Sans TC', sans-serif;
+}
+
+a,
+a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+.btn-outline-white{
+    color: $white;
+    border-color: $white;
+    &:hover{
+        background: $white;
+        color: $black;
+    }
+}
+
+
+@mixin pad {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin pad-below {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 575px) {
+        @content;
+    }
+}

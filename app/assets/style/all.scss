@@ -1,0 +1,14 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import 'base.scss';
+
+@import './page/index.scss';
+@import './page/layout.scss';
+@import './page/class.scss';
+@import './page/class-detail.scss';
+@import './page/registration.scss';
+@import './page/payment.scss';
+@import './page/sucessful.scss';
